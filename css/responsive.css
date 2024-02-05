@@ -1,0 +1,255 @@
+/* tablet__________________ */
+/* 768~1199 범위의 해상도 */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* HEADER_________________________ */
+  /* logo & top menu */
+  #pcheader nav {
+    max-width: 100%;
+    flex-flow: column wrap;
+  }
+  nav h1 img {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .gnb {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .gnb li {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+
+  /* SECTION______________________ */
+  section {
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .hashtags span {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+
+  /* y2k */
+  .y2kSecond img {
+    width: 45%;
+    max-width: 45%;
+  }
+  .y2kSecond article {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .y2kSecond article span {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+
+  /* claymorphism */
+  .clayFirst img {
+    width: 48%;
+    max-width: 48%;
+  }
+  .clayFirst img:first-child {
+    margin-right: 20px;
+  }
+  #claymorphism article {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  #claymorphism .hashtags {
+    margin-top: 25px;
+  }
+  /* maximalism */
+  .maxSecond{align-items: start;}
+  .maxSecond img {
+    width: 45%;
+    max-width: 45%;
+    height: 500px;
+    max-height: 500px;
+  }
+  .maxSecond article {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .maxSecond article span {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+
+  /* big typo */
+  #bigTypo img {
+    width: 48%;
+    max-width: 48%;
+  }
+  #bigTypo img:first-of-type {
+    margin-right: 30px;
+  }
+  #bigTypo article {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  /* FOOTER______________________ */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 150px;
+  }
+}
+
+/* mobile__________________ */
+/* 767이하~ 범위의 해상도 */
+@media screen and (max-width: 767px) {
+  /* HEADER_________________________ */
+  #pcheader{display: none;} 
+  #moheader{
+    display: block;
+    height: auto;
+  }
+  /* mobile menu */
+  nav{
+    width: inherit;
+    flex-direction: column;
+    position: relative;
+  }
+  #moheader nav .logo{padding: 25px;}
+
+  .logo img{height: 60px;}
+
+  .mognb{
+/*     border: 1px solid red; */
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1)
+  }
+  .mognb li a{
+    display: block;
+    padding: 8px;
+    margin: 0;
+  }
+  .mognb{display: none;}
+  /* trigger */
+  .trigger {
+  /* border: 1px solid #000; */
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    top: 50px;
+    right: 15px;
+  }
+  .trigger span{
+    background-color: #fff;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .trigger span:nth-child(1){top: 0;}
+  .trigger span:nth-child(2){top: 50%;}
+  .trigger span:nth-child(3){top: 100%;}
+
+  .trigger.active span:nth-child(1){transform: rotate(45deg);top: 50%;}
+  .trigger.active span:nth-child(2){opacity: 0;}
+  .trigger.active span:nth-child(3){transform: rotate(-45deg);top: 50%;}
+
+
+  /* SECTION______________________ */
+  section {
+    max-width: 100%;
+  }
+  h3 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .hashtags span {
+    font-size: 13px;
+    font-size: 0.813rem;
+  }
+
+  /* y2k */
+  .y2kSecond{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .y2kSecond img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .y2kSecond article {
+/*     border: 1px solid #000; */
+    height: 245px;
+    font-size: 14px;
+    font-size: 0.875;
+  }
+  .y2kSecond article span {
+    font-size: 16px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .y2kMobileHash{
+/*     border: 1px solid #000; */
+    display: flex;
+    margin-top: 0;
+  }
+  .y2kMobileHash .hashtags{margin: auto;}
+
+  /* claymorphism */
+  .clayFirst img:first-child {
+    margin-bottom: 20px;
+  }
+  #claymorphism article {
+    font-size: 14px;
+    font-size: 0.875;
+  }
+  #claymorphism .hashtags {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  /* maximalism */
+  .maxSecond{
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .maxSecond img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .maxSecond article {
+    font-size: 14px;
+    font-size: 0.875;
+  }
+  .maxSecond article span {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  #maximalism .hashtags {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* big typo */
+  #bigTypo img:first-of-type {
+    margin-bottom: 20px;
+  }
+  #bigTypo article {
+    font-size: 14px;
+    font-size: 0.875;
+  }
+  #bigTypo .hashtags {
+    margin-top: 15px;
+    text-align: center;
+  }
+  /* FOOTER______________________ */
+  footer {
+/*     border: 1px solid #000; */
+    height: 100px;
+    align-items: flex-end;
+  }
+
+}

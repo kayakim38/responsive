@@ -1,0 +1,234 @@
+@import url(common.css);
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+html {scroll-behavior: smooth;}
+body {
+  background-image: linear-gradient(to right, #d7d2cc 0%, #d7d2cc 70%, #304352 90%, #304352 100%);
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* ________________________PC */
+#moheader{display: none;}
+
+/* TOP BUTTON__________________________ */
+.top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.top a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../image/top.png) no-repeat;
+  transition: 0.35s;
+}
+.top a:hover {
+  background: url(../image/top_on.png) no-repeat;
+}
+
+/* HEADER_________________________ */
+/* logo & top menu */
+header {
+  /*   border: 1px solid #000; */
+  width: 100%;
+  height: 200px;
+}
+nav {
+  /*   border: 1px solid #000; */
+  width: 100%;
+  max-width: 1200px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav img {
+  max-width: 160px;
+}
+
+.gnb {
+  /*   border: 1px solid red; */
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+/* MAIN__________________________ */
+main {
+  height: 800px;
+}
+
+main h2 {
+  font-size: 150px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SECTION______________________ */
+section {
+  /*   border: 1px solid red; */
+  width: 100%;
+  max-width: 1200px;
+}
+
+h3 {
+  font-size: 48px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 200px 0 50px 0;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.hashtags {
+  text-align: right;
+  margin-bottom: 30px;
+}
+.hashtags span {
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -5px -5px 10px #b5b5b5, inset 5px 5px 10px #ffffff;
+  padding: 10px;
+  margin: 0 8px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+/* y2k */
+.y2kFirst img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.y2kSecond {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.y2kSecond img {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+}
+.y2kSecond article {
+  background-color: #111;
+  border-radius: 15px;
+  margin-left: 30px;
+  padding: 30px;
+  text-align: justify;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #eee;
+}
+.y2kSecond article span {
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.y2kMobileHash{margin-top: 20px;}
+
+/* claymorphism */
+.clayFirst img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+.clayFirst img:first-child {
+  margin-bottom: 50px;
+}
+#claymorphism article {
+  background-color: #333;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #eee;
+}
+#claymorphism .hashtags{margin-top: 20px;}
+
+
+/* maximalism */
+.maxFirst img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.maxSecond {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.maxSecond img {
+  border-radius: 15px;
+  width: 60%;
+  max-width: 60%;
+}
+.maxSecond article {
+  margin: 30px;
+  margin-left: 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.maxSecond article span {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#maximalism .hashtags {
+  margin-top: 25px;
+}
+/* big typo */
+#bigTypo img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+
+#bigTypo article {
+  font-size: 18px;
+  font-size: 1.125rem;
+  /*   margin-bottom: 100px; */
+}
+
+#bigTypo .hashtags {
+  margin-top: 25px;
+}
+/* FOOTER______________________ */
+footer {
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  height: 180px;
+}
+footer img {
+  max-height: 80px;
+  margin-bottom: 30px;
+}
+address {
+  font-style: normal;
+  color: #000;
+  margin-bottom: 30px;
+}
